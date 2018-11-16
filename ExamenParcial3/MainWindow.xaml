@@ -1,0 +1,17 @@
+﻿<Window x:Class="ExamenParcial3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamenParcial3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" Focusable="True" Background="#FFEABD6B">
+        <Image Name="imgGallo" Source="chicken_normal.png" Width="106" Height="88" Stretch="UniformToFill" Canvas.Left="661" Canvas.Top="139"></Image>
+        <Image Name="imgHuevo1" Source="egg.png" Width="78" Height="47" Stretch="Uniform" Canvas.Left="28" Canvas.Top="180" />
+        <Image Name="imgHuevo2" Source="egg.png" Width="78" Height="47" Stretch="Uniform" Canvas.Left="28" Canvas.Top="39" RenderTransformOrigin="1.139,0.534" />
+        <Image Name="imgHuevo3" Source="egg.png" Width="78" Height="47" Stretch="Uniform" Canvas.Left="28" Canvas.Top="325" />
+        <Image Name="imgHuevo4" Source="egg.png" Width="78" Height="47" Stretch="Uniform" Canvas.Left="28" Canvas.Top="110" />
+        <Image Name="imgHuevo5" Source="egg.png" Width="78" Height="47" Stretch="Uniform" Canvas.Left="28" Canvas.Top="255" />
+    </Canvas>
+</Window>
