@@ -44,39 +44,39 @@ namespace ExamenParcial3
                     var tiempoActual = stopwatch.Elapsed;
                     var deltaTime = tiempoActual - tiempoAnterior;
 
-                    double leftHuevo1Actual = Canvas.GetLeft(imgHuevo1);
-                    Canvas.SetLeft(imgHuevo1, leftHuevo1Actual + 90 * deltaTime.TotalSeconds);
-                    if (Canvas.GetLeft(imgHuevo1) >= 850)
+                    double leftHuevo1Actual = Canvas.GetTop(imgHuevo1);
+                    Canvas.SetTop(imgHuevo1, leftHuevo1Actual + 90 * deltaTime.TotalSeconds);
+                    if (Canvas.GetTop(imgHuevo1) >= 850)
                     {
-                        Canvas.SetLeft(imgHuevo1, -100);
+                        Canvas.SetTop(imgHuevo1, -100);
                     }
 
-                    double leftHuevo2Actual = Canvas.GetLeft(imgHuevo2);
-                    Canvas.SetLeft(imgHuevo2, leftHuevo2Actual + 50 * deltaTime.TotalSeconds);
-                    if (Canvas.GetLeft(imgHuevo2) >= 850)
+                    double leftHuevo2Actual = Canvas.GetTop(imgHuevo2);
+                    Canvas.SetTop(imgHuevo2, leftHuevo2Actual + 50 * deltaTime.TotalSeconds);
+                    if (Canvas.GetTop(imgHuevo2) >= 850)
                     {
-                        Canvas.SetLeft(imgHuevo2, -100);
+                        Canvas.SetTop(imgHuevo2, -100);
                     }
 
-                    double leftHuevo3Actual = Canvas.GetLeft(imgHuevo3);
-                    Canvas.SetLeft(imgHuevo3, leftHuevo3Actual + 120 * deltaTime.TotalSeconds);
-                    if (Canvas.GetLeft(imgHuevo3) >= 850)
+                    double leftHuevo3Actual = Canvas.GetTop(imgHuevo3);
+                    Canvas.SetTop(imgHuevo3, leftHuevo3Actual + 120 * deltaTime.TotalSeconds);
+                    if (Canvas.GetTop(imgHuevo3) >= 850)
                     {
-                        Canvas.SetLeft(imgHuevo3, -100);
+                        Canvas.SetTop(imgHuevo3, -100);
                     }
 
-                    double leftHuevo4Actual = Canvas.GetLeft(imgHuevo4);
-                    Canvas.SetLeft(imgHuevo4, leftHuevo4Actual + 100 * deltaTime.TotalSeconds);
-                    if (Canvas.GetLeft(imgHuevo4) >= 850)
+                    double leftHuevo4Actual = Canvas.GetTop(imgHuevo4);
+                    Canvas.SetTop(imgHuevo4, leftHuevo4Actual + 100 * deltaTime.TotalSeconds);
+                    if (Canvas.GetTop(imgHuevo4) >= 850)
                     {
-                        Canvas.SetLeft(imgHuevo4, -100);
+                        Canvas.SetTop(imgHuevo4, -100);
                     }
 
-                    double leftHuevo5Actual = Canvas.GetLeft(imgHuevo5);
-                    Canvas.SetLeft(imgHuevo5, leftHuevo5Actual + 70 * deltaTime.TotalSeconds);
-                    if (Canvas.GetLeft(imgHuevo5) >= 850)
+                    double leftHuevo5Actual = Canvas.GetTop(imgHuevo5);
+                    Canvas.SetTop(imgHuevo5, leftHuevo5Actual + 70 * deltaTime.TotalSeconds);
+                    if (Canvas.GetTop(imgHuevo5) >= 850)
                     {
-                        Canvas.SetLeft(imgHuevo5, -100);
+                        Canvas.SetTop(imgHuevo5, -100);
                     }
 
                     tiempoAnterior = tiempoActual;
@@ -86,15 +86,15 @@ namespace ExamenParcial3
         }
         private void miCanvas_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Up || e.Key == Key.W)
+            if (e.Key == Key.Left || e.Key == Key.A)
             {
-                double topGalloActual = Canvas.GetTop(imgGallo);
-                Canvas.SetTop(imgGallo, topGalloActual - 15);
+                double topGalloActual = Canvas.GetLeft(imgGallo);
+                Canvas.SetLeft(imgGallo, topGalloActual - 15);
             }
-            if (e.Key == Key.Down || e.Key == Key.S)
+            if (e.Key == Key.Right || e.Key == Key.D)
             {
-                double topGalloActual = Canvas.GetTop(imgGallo);
-                Canvas.SetTop(imgGallo, topGalloActual + 15);
+                double topGalloActual = Canvas.GetLeft(imgGallo);
+                Canvas.SetLeft(imgGallo, topGalloActual + 15);
             }
         }
     }
